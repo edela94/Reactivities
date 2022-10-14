@@ -1,13 +1,15 @@
 {
   "version": 2,
-  "dgSpecHash": "xZC83u/zApnutnP7HhIXz5Pdiftu92bP1dT2AP3I7I2N/o0UXwQ1MdH0k0GP47ETQp8zrRZf62LIfDoBIt49Ug==",
+  "dgSpecHash": "N5r3cDZFnBw2MAobu0/tzHASyf4oPPzxJSl8GF5oC/Zid9Y3lqleICCNyNdKyO9Q8vTHmhuQS6MMnVNrX4d2Hg==",
   "success": true,
   "projectFilePath": "/Users/estbndlt/Documents/git/udemy_dotnet_react/Reactivities/API/API.csproj",
   "expectedPackageFiles": [
+    "/Users/estbndlt/.nuget/packages/humanizer.core/2.8.26/humanizer.core.2.8.26.nupkg.sha512",
     "/Users/estbndlt/.nuget/packages/microsoft.data.sqlite.core/6.0.9/microsoft.data.sqlite.core.6.0.9.nupkg.sha512",
     "/Users/estbndlt/.nuget/packages/microsoft.entityframeworkcore/6.0.9/microsoft.entityframeworkcore.6.0.9.nupkg.sha512",
     "/Users/estbndlt/.nuget/packages/microsoft.entityframeworkcore.abstractions/6.0.9/microsoft.entityframeworkcore.abstractions.6.0.9.nupkg.sha512",
     "/Users/estbndlt/.nuget/packages/microsoft.entityframeworkcore.analyzers/6.0.9/microsoft.entityframeworkcore.analyzers.6.0.9.nupkg.sha512",
+    "/Users/estbndlt/.nuget/packages/microsoft.entityframeworkcore.design/6.0.9/microsoft.entityframeworkcore.design.6.0.9.nupkg.sha512",
     "/Users/estbndlt/.nuget/packages/microsoft.entityframeworkcore.relational/6.0.9/microsoft.entityframeworkcore.relational.6.0.9.nupkg.sha512",
     "/Users/estbndlt/.nuget/packages/microsoft.entityframeworkcore.sqlite/6.0.9/microsoft.entityframeworkcore.sqlite.6.0.9.nupkg.sha512",
     "/Users/estbndlt/.nuget/packages/microsoft.entityframeworkcore.sqlite.core/6.0.9/microsoft.entityframeworkcore.sqlite.core.6.0.9.nupkg.sha512",
