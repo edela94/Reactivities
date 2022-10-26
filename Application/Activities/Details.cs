@@ -8,11 +8,6 @@ namespace Application.Activities
     {
         public class Query : IRequest<Activity>
         {
-            // public Query(Guid id)
-            // {
-            //     this.Id = id;
-
-            // }
             public Guid Id { get; set; }
         }
 
