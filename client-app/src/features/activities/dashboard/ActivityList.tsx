@@ -10,6 +10,7 @@ import { Activity } from "../../../app/models/activity";
 
 interface Props {
   activities: Activity[];
+  selectActivity: (id: String) => void;
 }
 
 export default function ActityList(props: Props) {
@@ -28,7 +29,12 @@ export default function ActityList(props: Props) {
                 </div>
               </Item.Description>
               <Item.Extra>
-                <Button floated="right" content="view" color="blue" />
+                <Button
+                  onClick={() => props.selectActivity(activity.id)}
+                  floated="right"
+                  content="view"
+                  color="blue"
+                />
                 <Label basic content={activity.category} />
               </Item.Extra>
             </ItemContent>
