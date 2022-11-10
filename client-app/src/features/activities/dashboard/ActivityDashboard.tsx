@@ -7,11 +7,12 @@ import ActivityForm from "../form/ActivityForm";
 interface Props {
   activities: Activity[];
   selectedActivity: Activity | undefined;
-  selectActivity: (id: String) => void;
+  selectActivity: (id: string) => void;
   cancelSelectActivity: () => void;
   editMode: boolean;
   openForm: (id: string) => void;
   closeForm: () => void;
+  createOrEdit: (activity: Activity) => void;
 }
 
 export default function ActityDashboard(props: Props) {
@@ -37,6 +38,7 @@ export default function ActityDashboard(props: Props) {
           <ActivityForm
             closeForm={props.closeForm}
             activity={props.selectedActivity}
+            createOrEdit={props.createOrEdit}
           />
         )}
       </Grid.Column>

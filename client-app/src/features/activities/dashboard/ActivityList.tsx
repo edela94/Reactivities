@@ -10,7 +10,7 @@ import { Activity } from "../../../app/models/activity";
 
 interface Props {
   activities: Activity[];
-  selectActivity: (id: String) => void;
+  selectActivity: (id: string) => void;
 }
 
 export default function ActityList(props: Props) {
