@@ -11,6 +11,7 @@ import { Activity } from "../../../app/models/activity";
 interface Props {
   activities: Activity[];
   selectActivity: (id: string) => void;
+  deleteActivity: (id: string) => void;
 }
 
 export default function ActityList(props: Props) {
@@ -32,8 +33,14 @@ export default function ActityList(props: Props) {
                 <Button
                   onClick={() => props.selectActivity(activity.id)}
                   floated="right"
-                  content="view"
+                  content="View"
                   color="blue"
+                />
+                <Button
+                  onClick={() => props.deleteActivity(activity.id)}
+                  floated="right"
+                  content="Delete"
+                  color="red"
                 />
                 <Label basic content={activity.category} />
               </Item.Extra>
