@@ -1,3 +1,4 @@
+import { SyntheticEvent, useState } from "react";
 import {
   Button,
   Item,
@@ -12,9 +13,20 @@ interface Props {
   activities: Activity[];
   selectActivity: (id: string) => void;
   deleteActivity: (id: string) => void;
+  submitting: boolean;
 }
 
 export default function ActityList(props: Props) {
+  const [target, setTarget] = useState("");
+
+  const handleActivityDelete = (
+    e: SyntheticEvent<HTMLButtonElement>,
+    id: string
+  ) => {
+    setTarget(e.currentTarget.name);
+    props.deleteActivity(id);
+  };
+
   return (
     <Segment>
       <Item.Group divided>
@@ -37,7 +49,9 @@ export default function ActityList(props: Props) {
                   color="blue"
                 />
                 <Button
-                  onClick={() => props.deleteActivity(activity.id)}
+                  name={activity.id}
+                  loading={props.submitting && target === activity.id}
+                  onClick={(e) => handleActivityDelete(e, activity.id)}
                   floated="right"
                   content="Delete"
                   color="red"
